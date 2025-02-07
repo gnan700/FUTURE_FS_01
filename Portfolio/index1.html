@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db5400783a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="logo.png" alt="LOGO" class="logo"> -->
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">CV</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>B.Tech Computer Science and Enginnering</p>
+            <h1>Bagi Gnandeep Reddy</h1>
+            <h6>KL University <br> Green Feilds <br> Vaddeswaram, Guntur Dist. (Andhra Pradesh), India 
+            </h6>
+            <h6>A passionate B.Tech graduate looking to contribute to impactful projects. </h6>
+        </div>
+    </div>
+</div>
+<!-- ABOUT ME ______________________ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me.jpg" alt="me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+                    Hi, I'm Bagi Gnandeep Reddy, a passionate and motivated B.Tech graduate eager to kickstart my career in the tech industry. Although I don't have real-time experience, I       have honed my skills through academic projects and hands-on learning.
+                </p>
+                <p>
+                   My journey has been driven by curiosity and a dedication to building innovative solutions. Whether it's web development, programming challenges, or exploring the latest technologies, I am always eager to learn and grow. I am excited about the opportunity to contribute my knowledge and enthusiasm to impactful projects in a professional environment.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('cskills')">Computer Skills</p>
+                    <p class="tab-links"onclick="opentab('planguages')">Programming Languages</p>
+                    <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="cskills">
+                    <ul>
+                        <li><span>MS Office</span></li>
+                        <li><span>Linux</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="planguages">
+                    <ul>
+                        <li><span>C</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>ReactJS</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Java</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Weather Monitoring System</span></li>
+                        <li><span>Dynamic Rule-Based Eligibility Engine with AST Representation</span></li>
+                        <li><span>Fake Review Detection</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-filter">
+                <button data-category="all">All</button>
+                <button data-category="web-development">Web Development</button>
+                <button data-category="data-science">Data Science</button>
+            </div>
+            <div class="project-grid">
+                <div class="project" data-category="web-development">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>Weather Monitoring System</h3>
+                    <p>I recently developed a real-time Weather Monitoring System that integrates with the OpenWeatherMap API to provide real-time weather updates for major Indian cities like Delhi, Mumbai, and Bangalore. This project includes:
+<li>1. Continuous weather data retrieval and analysis</li>
+<li>2. Daily summaries with temperature rollups (average, max, min) and dominant weather condition</li>
+<li>3. User-configurable threshold alerts for extreme conditions</li>
+<li>4. Data visualization for historical trends and daily summaries</li>
+<li>5. Built using Python, Flask, Matplotlib, and other modern tools</li>
+</p>
+
+<p>The system demonstrates skills in API integration, data processing, visualization, and alert systems, making it a great example of functional and scalable application design.</p>
+                </div>
+                <div class="project" data-category="data-science">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>
+Dynamic Rule-Based Eligibility Engine with AST Representation</h3>
+                    <p>Developed a 3-tier application to dynamically evaluate user eligibility based on customizable rules using Abstract Syntax Trees (AST). The system includes a user-friendly web interface (HTML/CSS/JavaScript), a Flask-based API backend, and SQLite for data persistence. Users can define, modify, and combine rules like (age > 30 AND department = 'Sales') OR (salary > 50000) to determine eligibility dynamically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- contact---------------------- -->
+<br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i> gnandeep700@gmail.com</p>
+                   <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gnan-deep-43349b167"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/vintage_carnival/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/gnan700"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="GnanResume2024.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made wtih <i class="fas fa-heart"></i> by Bagi Gnandeep Reddy </p>
+    </div>
+</div> 
+
+
+
+<script>
+
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+            tablink. classList. remove ("active-link");
+            }
+
+            for (tabcontent of tabcontents){
+            tabcontent. classList. remove("active-tab");
+            }
+            event. currentTarget. classList. add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+</script>
+</body>
+</html>
